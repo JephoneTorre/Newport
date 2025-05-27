@@ -78,24 +78,33 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
+        title: 'Sentisize',
+        description: 'A emotion/diary app',
+        bgImage: '/senti.png',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
+        title: 'iLuwagan',
+        description: 'Mobile Paluwagan App',
+        bgImage: '/luwag.png',
+        link: 'https://www.figma.com/proto/PQsTxAAKZNVGTUZJKUs4VY/TECHNO-iLUWAGAN?page-id=0%3A1&node-id=7-9&p=f&viewport=484%2C164%2C0.04&t=4mDNiAO2oNrTqO5T-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=85%3A54&show-proto-sidebar=1,'
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
+        title: 'Kantonize',
+        description: 'A SaaS webapp',
+        bgImage: '/kanton.png',
+        link: 'https://kantonize.vercel.app',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
+        title: 'Ipsync',
+        description: 'Internship and collab website',
+        bgImage: 'sync.png',
+        link: 'https://ipsync.vercel.app',
+    },
+    {
+        title: 'Debunkr',
+        description: 'Fake news clasifier',
+        bgImage: 'debunkr.png',
+        link: 'https://github.com/hydraadra112/Debunkr',
     },
 ]
 

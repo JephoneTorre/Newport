@@ -2,6 +2,7 @@ import React from 'react';
 import { assets, workData } from '../../../assets/assets';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const Work = ({ isDarkMode }) => {
   return (
@@ -57,9 +58,13 @@ const Work = ({ isDarkMode }) => {
                 <h2 className="font-semibold">{project.title}</h2>
                 <p className="text-sm text-gray-700">{project.description}</p>
               </div>
-              <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-md group-hover:bg-lime-300 transition">
-                <Image src={assets.send_icon} alt="send icon" className="w-5" />
-              </div>
+           <Link href={project.link || '#'} passHref legacyBehavior>
+                <a target={project.link?.startsWith('http') ? '_blank' : '_self'} rel={project.link?.startsWith('http') ? 'noopener noreferrer' : undefined}>
+                  <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-md group-hover:bg-lime-300 transition">
+                    <Image src={assets.send_icon} alt="send icon" className="w-5" />
+                  </div>
+                </a>
+              </Link>
             </div>
           </motion.div>
         ))}
