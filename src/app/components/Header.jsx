@@ -30,7 +30,7 @@ const Header = () => {
                 initial={{opacity: 0}}
               whileInView={{opacity: 1}}
               transition={{duration: 0.6, delay: 0.7}}
-                className='max-w-2x1 mx-auto font-Ovd'> I am a frontend developer from Iloilo, Philippines with 3 years of experience in West Visayas State University.
+                className='max-w-2x1 mx-auto font-Ovd'> I am a frontend developer from Iloilo, Philippines with 4 years of experience in West Visayas State University.
                 </motion.p>
 
                 <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>

@@ -6,10 +6,10 @@ import edu_icon_dark from './edu-icon-dark.png';
 import project_icon from './project-icon.png';
 import project_icon_dark from './project-icon-dark.png';
 import vscode from './vscode.png';
-import firebase from './firebase.png';
+import godot from './godot.png';
 import figma from './figma.png';
-import git from './git.png';
-import mongodb from './mongodb.png';
+import jupyter from './jupyter.png';
+import c from './c.png';
 import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
 import logo_dark from './logo_dark.png';
@@ -45,10 +45,10 @@ export const assets = {
     project_icon,
     project_icon_dark,
     vscode,
-    firebase,
+    godot,
     figma,
-    git,
-    mongodb,
+    jupyter,
+    c,
     right_arrow_white,
     logo,
     logo_dark,
@@ -106,6 +106,12 @@ export const workData = [
         bgImage: 'debunkr.png',
         link: 'https://github.com/hydraadra112/Debunkr',
     },
+     {
+        title: 'NumericalCalculator',
+        description: 'Fake news clasifier',
+        bgImage: 'debunkr.png',
+        link: 'https://github.com/hydraadra112/Debunkr',
+    },
 ]
 
 export const serviceData = [
@@ -122,5 +128,5 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.c, assets.jupyter, assets.figma, assets.godot
 ];

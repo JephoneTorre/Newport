@@ -44,7 +44,7 @@ const About = (isDarkMode) => {
             transition={{duration: 0.6, delay: 0.8}}
             className='flex-1'>
               <p className='mb-10 max-w-2xl font-Ovo'
-                      >I am an 3rd year Computer Science student who specialized in Front-end Development. Throughout my career, 
+                      >I am a 4th year Computer Science student who specialized in Front-end Development. Throughout my career, 
                       I have had the privilege of collaborating with students, contributing to their success and growth.</p>
          
                           <motion.ul
