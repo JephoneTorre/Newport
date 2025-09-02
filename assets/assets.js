@@ -108,7 +108,7 @@ export const workData = [
     },
      {
         title: 'NumericalCalculator',
-        description: 'Fake news clasifier',
+        description: 'calculates the simple interest based on these values',
         bgImage: 'debunkr.png',
         link: 'https://github.com/hydraadra112/Debunkr',
     },
