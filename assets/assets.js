@@ -109,7 +109,7 @@ export const workData = [
      {
         title: 'NumericalCalculator',
         description: 'calculates the simple interest based on these values',
-        bgImage: 'debunkr.png',
+        bgImage: 'numerical.png',
         link: 'https://github.com/hydraadra112/Debunkr',
     },
 ]
