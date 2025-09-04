@@ -1,4 +1,6 @@
 import React from 'react'
+import Image from 'next/image'
+import { assets } from '../../../assets/assets'
 
 const Accounts = ({ onBack, isDarkMode }) => {
   const accounts = [
@@ -9,7 +11,17 @@ const Accounts = ({ onBack, isDarkMode }) => {
   ]
 
   return (
-    <div className={`min-h-screen p-6 ${isDarkMode ? 'dark' : ''}`}>
+    <div className='relative min-h-screen p-6'>
+      {/* Background exactly like Navbar */}
+      <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden'>
+        <Image src={assets.header_bg_color} alt='Background' className='w-full' />
+      </div>
+
+      {/* Dark mode overlay */}
+      {isDarkMode && (
+        <div className='fixed inset-0 -z-10 bg-darkTheme bg-opacity-50 backdrop-blur-lg'></div>
+      )}
+
       {/* Back Button */}
       <button
         onClick={onBack}
