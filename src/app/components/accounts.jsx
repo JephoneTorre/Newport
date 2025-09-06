@@ -53,7 +53,9 @@ const Accounts = ({ onBack, isDarkMode }) => {
             target="_blank"
             rel="noreferrer"
             className={`w-64 p-6 rounded-lg shadow-md transition transform hover:scale-105 text-center
-              ${isDarkMode ? 'bg-gray-800 text-white shadow-gray-700 hover:bg-gray-700' : 'bg-white text-black shadow-gray-300 hover:bg-gray-100'}`}
+              ${isDarkMode 
+                ? 'bg-gray-800 text-white shadow-gray-700 hover:shadow-[0_0_20px_#9333ea] hover:bg-gray-700' 
+                : 'bg-white text-black shadow-gray-300 hover:shadow-[0_0_20px_#3b82f6] hover:bg-gray-100'}`}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
