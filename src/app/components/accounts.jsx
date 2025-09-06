@@ -12,7 +12,7 @@ const Accounts = ({ onBack, isDarkMode }) => {
 
   return (
     <div className='relative min-h-screen flex flex-col items-center justify-center p-6'>
-      {/* Background exactly like Navbar */}
+      {/* Background same as Navbar */}
       <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden'>
         <Image src={assets.header_bg_color} alt='Background' className='w-full' />
       </div>
@@ -31,8 +31,9 @@ const Accounts = ({ onBack, isDarkMode }) => {
         ← Back
       </button>
 
+      {/* Page Title */}
       <div className='text-center mb-10'>
-        <h1 className={`text-2xl font-bold ${isDarkMode ? 'text-white' : 'text-black'}`}>
+        <h1 className={`text-2xl font-Ovo font-bold ${isDarkMode ? 'text-white' : 'text-black'}`}>
           My Accounts
         </h1>
       </div>
@@ -48,7 +49,7 @@ const Accounts = ({ onBack, isDarkMode }) => {
             className={`w-64 p-6 rounded-lg shadow-md transition transform hover:scale-105 text-center
               ${isDarkMode ? 'bg-gray-800 text-white shadow-gray-700 hover:bg-gray-700' : 'bg-white text-black shadow-gray-300 hover:bg-gray-100'}`}
           >
-            <h2 className='text-lg font-semibold mb-2'>{account.name}</h2>
+            <h2 className='text-lg font-semibold mb-2 font-Ovo'>{account.name}</h2>
             <p className='text-sm break-words'>{account.link}</p>
           </a>
         ))}
