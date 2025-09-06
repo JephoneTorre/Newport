@@ -11,7 +11,7 @@ const Accounts = ({ onBack, isDarkMode }) => {
   ]
 
   return (
-    <div className='relative min-h-screen p-6'>
+    <div className='relative min-h-screen flex flex-col items-center justify-center p-6'>
       {/* Background exactly like Navbar */}
       <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden'>
         <Image src={assets.header_bg_color} alt='Background' className='w-full' />
@@ -25,22 +25,27 @@ const Accounts = ({ onBack, isDarkMode }) => {
       {/* Back Button */}
       <button
         onClick={onBack}
-        className={`px-4 py-2 mb-6 border rounded transition 
+        className={`absolute top-6 left-6 px-4 py-2 border rounded transition 
           ${isDarkMode ? 'bg-gray-700 text-white border-gray-600 hover:bg-gray-600' : 'bg-gray-200 text-black border-gray-300 hover:bg-gray-300'}`}
       >
         ← Back
       </button>
 
-      <h1 className={`text-2xl font-bold mb-6 ${isDarkMode ? 'text-white' : 'text-black'}`}>My Accounts</h1>
+      <div className='text-center mb-10'>
+        <h1 className={`text-2xl font-bold ${isDarkMode ? 'text-white' : 'text-black'}`}>
+          My Accounts
+        </h1>
+      </div>
 
-      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+      {/* Centered Accounts Grid */}
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center'>
         {accounts.map((account, index) => (
           <a
             key={index}
             href={account.link}
             target="_blank"
             rel="noreferrer"
-            className={`p-6 rounded-lg shadow-md transition transform hover:scale-105
+            className={`w-64 p-6 rounded-lg shadow-md transition transform hover:scale-105 text-center
               ${isDarkMode ? 'bg-gray-800 text-white shadow-gray-700 hover:bg-gray-700' : 'bg-white text-black shadow-gray-300 hover:bg-gray-100'}`}
           >
             <h2 className='text-lg font-semibold mb-2'>{account.name}</h2>
