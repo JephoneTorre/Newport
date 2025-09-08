@@ -29,7 +29,7 @@ const Accounts = ({ onBack, isDarkMode }) => {
         <button
           onClick={onBack}
           className={`absolute top-6 left-6 px-4 py-2 border rounded transition 
-            ${isDarkMode ? 'bg-gray-700 text-white border-gray-600 hover:bg-gray-600' : 'bg-gray-200 text-black border-gray-300 hover:bg-gray-300'}`}
+            ${isDarkMode ? 'bg-gray-700 text-white border-gray-600 hover:bg-gray-600' : 'bg-white-200 text-black border-gray-300 hover:bg-gray-300'}`}
         >
           ← Back
         </button>
