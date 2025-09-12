@@ -21,6 +21,7 @@ const Work = ({ isDarkMode }) => {
       >
         My Portfolio
       </motion.h4>
+
       <motion.h2
         className="text-center text-5xl font-Ovo"
         initial={{ opacity: 0, y: -20 }}
@@ -58,8 +59,11 @@ const Work = ({ isDarkMode }) => {
                 <h2 className="font-semibold">{project.title}</h2>
                 <p className="text-sm text-gray-700">{project.description}</p>
               </div>
-           <Link href={project.link || '#'} passHref legacyBehavior>
-                <a target={project.link?.startsWith('http') ? '_blank' : '_self'} rel={project.link?.startsWith('http') ? 'noopener noreferrer' : undefined}>
+              <Link href={project.link || '#'} passHref legacyBehavior>
+                <a
+                  target={project.link?.startsWith('http') ? '_blank' : '_self'}
+                  rel={project.link?.startsWith('http') ? 'noopener noreferrer' : undefined}
+                >
                   <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-md group-hover:bg-lime-300 transition">
                     <Image src={assets.send_icon} alt="send icon" className="w-5" />
                   </div>
@@ -70,20 +74,24 @@ const Work = ({ isDarkMode }) => {
         ))}
       </motion.div>
 
-      <motion.a
+      {/* Updated Show More Button */}
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.1, duration: 0.5 }}
-        href=""
-        className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover"
+        className="flex justify-center"
       >
-        Show more
-        <Image
-          src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold}
-          alt="Right arrow"
-          className="w-4"
-        />
-      </motion.a>
+        <Link href="/showmoreproj" passHref legacyBehavior>
+          <a className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50">
+            Show more
+            <Image
+              src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold}
+              alt="Right arrow"
+              className="w-3"
+            />
+          </a>
+        </Link>
+      </motion.div>
     </motion.div>
   );
 };

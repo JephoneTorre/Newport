@@ -8,6 +8,8 @@ import Work from "./components/Work";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Accounts from "./components/accounts"; // import Accounts component
+import showmoreproj from "./components/showmoreproj";
+
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
