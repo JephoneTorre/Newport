@@ -45,7 +45,7 @@ const About = (isDarkMode) => {
             className='flex-1'>
               <p className='mb-10 max-w-2xl font-Ovo'
                       >I am a 4th year Computer Science student who specialized in Front-end Development. Throughout my career, 
-                      I have had the privilege of collaborating with students, contributing to their success and growth.</p>
+                      I have had the privilege of collaborating with students, helping each other to succeed and grow.</p>
          
                           <motion.ul
                            initial={{opacity: 0}}
