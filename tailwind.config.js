@@ -12,7 +12,7 @@ content: [
       colors: {
         lightHover: '#fcf4ff',
         darkHover: '#2a004a',
-        darkTheme: '#11001F',
+        darkTheme: '#000000ff',
       },
       fontFamily : {
         Outfit: ["Outfit", "sans-serif"],
