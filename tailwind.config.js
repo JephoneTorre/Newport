@@ -11,7 +11,7 @@ content: [
     extend: {
       colors: {
         lightHover: '#fcf4ff',
-        darkHover: '#2a004a',
+        darkHover: '#464448ff',
         darkTheme: '#000000ff',
       },
       fontFamily : {
