@@ -10,7 +10,7 @@ content: [
   theme: {
     extend: {
       colors: {
-        lightHover: '#fcf4ff',
+        lightHover: '#f9ecfeff',
         darkHover: '#464448ff',
         darkTheme: '#000000ff',
       },
