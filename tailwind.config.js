@@ -19,7 +19,7 @@ content: [
         Ovo: ["Ovo", "serif"]
       },
       boxShadow: {
-        'black' : '4px 4px 0 #000',
+        'black' : '4px 4px 0 #070707ff',
         'white' : '4px 4px 0 #fff',
       },
       gridTemplateColumns: {
